@@ -11,7 +11,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Unzip images.zip
-      run: unzip images.zip -d images
+      run: unzip images.zip -d main
 
     - name: Commit and push changes
       run: |
