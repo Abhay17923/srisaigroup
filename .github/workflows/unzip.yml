@@ -1,0 +1,22 @@
+name: Unzip Images
+
+on: [push]
+
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Unzip images.zip
+      run: unzip images.zip -d images
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "you@example.com"
+        git config --local user.name "Your Name"
+        git add .
+        git commit -m "Unzipped images.zip"
+        git push
