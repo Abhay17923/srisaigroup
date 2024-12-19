@@ -292,8 +292,8 @@ ul {
     color: white;
     border: none;
     padding: 10px 24px;
-    align-items: center;
     cursor: pointer;
+    
 }
 
 .tabs button:hover {
